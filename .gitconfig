@@ -1,0 +1,37 @@
+[user]
+	name = who@where
+	email = some@domain
+
+[push]
+	default = simple
+
+[alias]
+	co = checkout
+	cm = commit
+	rs = reset
+	rb = rebase
+	br = branch
+	cp = cherry-pick
+	rv = revert
+	st = status
+	ss = stash
+	cf = cat-file
+	ur = update-ref
+	sr = symbolic-ref
+	lr = show-ref
+	ls = ls-files
+	lo = log --oneline
+	ll = log --pretty=format:'%C(yellow)%h %C(white)%ad |%Creset %s %C(white)--%C(bold)%an%Creset%C(white) (%cr)%Creset' --date=short
+	lg = log --pretty=format:'%C(yellow)%h %C(white)%ad |%Creset%C(auto)%d %s %C(white)--%C(bold)%an%Creset%C(white) (%cr)%Creset' --date=short --graph
+	lga = log --pretty=format:'%C(yellow)%h %C(white)%ad |%Creset%C(auto)%d %s %C(white)--%C(bold)%an%Creset%C(white) (%cr)%Creset' --date=short --graph --all
+[core]
+	excludesfile = /Users/sandylee/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = JerryShen
+	emal = jerry82422@gmail.com
